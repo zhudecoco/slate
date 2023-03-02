@@ -333,6 +333,9 @@
                   <li>
                     <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
                   </li>
+                  <li>
+                    <a href="#6b15dcb6a3" class="toc-h2 toc-link" data-title="获取合约信息">获取合约信息</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -526,6 +529,81 @@ Remember — a happy kitten is an authenticated kitten!
 <td>The ID of the kitten to delete</td>
 </tr>
 </tbody></table>
+<h2 id='6b15dcb6a3'>获取合约信息</h2>
+<p><strong>URL:</strong> <code>/v1/inner/contract_config</code></p>
+
+<p><strong>Type:</strong> <code>GET</code></p>
+
+<p><strong>Author:</strong> zyq</p>
+
+<p><strong>Content-Type:</strong> <code>application/x-www-form-urlencoded;charset=UTF-8</code></p>
+
+<p><strong>Description:</strong> 获取合约信息</p>
+
+<p><strong>Request-example:</strong>
+<code>
+curl -X GET -i /v1/inner/contract_config
+</code></p>
+
+<p><strong>Response-fields:</strong></p>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Description</th>
+<th>Since</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>string</td>
+<td>No comments found.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>No comments found.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>args</td>
+<td>array</td>
+<td>No comments found.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>└─any object</td>
+<td>object</td>
+<td>any object.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>data</td>
+<td>object</td>
+<td>No comments found.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>└─any object</td>
+<td>object</td>
+<td>any object.</td>
+<td>-</td>
+</tr>
+</tbody></table>
+
+<p><strong>Response-example:</strong>
+<code>
+{
+  &quot;code&quot;: &quot;78272&quot;,
+  &quot;msg&quot;: &quot;ro9y3t&quot;,
+  &quot;args&quot;: [
+    {}
+  ],
+  &quot;data&quot;: {}
+}
+</code></p>
 <h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
